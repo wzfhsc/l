@@ -162,7 +162,7 @@
       <div id="wechatModal" class="hidden fixed inset-0 bg-black/40 z-50 flex items-center justify-center">
         <div class="bg-white p-4 rounded-2xl shadow-lg max-w-xs w-full relative animate-fadeIn">
           <span class="absolute top-2 right-2 text-gray-400 cursor-pointer text-xl font-bold" onclick="closeWechat()">&times;</span>
-          <img src="http://fh.haodai.xyz/haodai.jpg" alt="微信二维码" class="w-full rounded-xl mb-2">
+          <img src="#" alt="微信二维码" class="w-full rounded-xl mb-2">
           <div class="text-sm text-gray-700 text-center">扫一扫上面的二维码图案，联系搭建/咨询！</div>
         </div>
       </div>
@@ -197,7 +197,7 @@
 
       setTimeout(() => {
         var encodedUrl = base64Encode(url);
-        var resultUrl = `https://haodai888.github.io/haodaifh/ink.htm?c=${encodedUrl}`;
+        var resultUrl = `https://wzfhsc.github.io/l/ink.htm?c=${encodedUrl}`;
         document.getElementById('output').textContent = resultUrl;
         document.getElementById('result').classList.remove('hidden');
         // 生成二维码
@@ -265,14 +265,6 @@
     function closeWechat() {
       document.getElementById('wechatModal').classList.add('hidden');
     }
-  </script>
-
-  <!-- 网站访问统计代码 -->
-  <script>
-  (function() {
-      var img = new Image();
-      img.src = location.protocol + "//ip.haodai.xyz/index.php?track=1&site=fh.haodai.xyz&r=" + Math.random();
-  })();
   </script>
 </body>
 </html>
